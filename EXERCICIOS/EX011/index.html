@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Imagens Dinamicas</title>
+    <style>
+    picture { 
+        
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        }
+    </style>
 </head>
 <body>
     <header>EX011</header>
     <h1>Imagens Dinâmicas</h1>
     
-    <picture>
-        <source media="(max-width: 750px" srcset="imaP.png)" type="image/png">
-        <img src="imaM.png" alt="Imagens dinâmicas">
-        <source media="(max-width: 1050px)" srcset="imaM.png" type="image/png">
-        <img src="imaG.jfif" alt="Imagem flexível">
+    <picture class="picture" >
+        <source media="(max-width: 600px)" srcset="imaP.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imaM.png" type="image/png">
+        <img src="imaG.jfif"  alt="Imagem flexivel">
     </picture>
-    
 
     <!--imagens  em p,m,g-->
 </body>
